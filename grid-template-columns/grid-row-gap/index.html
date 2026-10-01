@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-row-gap</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-bottom: 30px;
+        }
+
+        .grid-container div {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Length */
+        .length {
+            grid-row-gap: 20px;
+        }
+
+        .length div {
+            background-color: lightblue;
+        }
+
+        /* Percentage */
+        .percentage {
+            grid-row-gap: 5%;
+            height: 400px;
+        }
+
+        .percentage div {
+            background-color: lightgreen;
+        }
+
+        /* Initial */
+        .initial {
+            grid-row-gap: initial;
+        }
+
+        .initial div {
+            background-color: lightcoral;
+        }
+
+        /* Inherit */
+        .inherit-parent {
+            grid-row-gap: 20px;
+        }
+
+        .inherit {
+            grid-row-gap: inherit;
+        }
+
+        .inherit div {
+            background-color: lightyellow;
+        }
+
+        /* Unset */
+        .unset {
+            grid-row-gap: unset;
+        }
+
+        .unset div {
+            background-color: lightpink;
+        }
+
+        /* Revert */
+        .revert {
+            grid-row-gap: revert;
+        }
+
+        .revert div {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Grid - grid-row-gap</h1>
+
+    <h2>Ví dụ 1: Length</h2>
+
+    <div class="grid-container length">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+
+    <h2>Ví dụ 2: Percentage (%)</h2>
+
+    <div class="grid-container percentage">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+
+    <h2>Ví dụ 3: Initial</h2>
+
+    <div class="grid-container initial">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+
+    <h2>Ví dụ 4: Inherit</h2>
+
+    <div class="grid-container inherit-parent">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+
+    <h2>Ví dụ 5: Unset</h2>
+
+    <div class="grid-container unset">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+
+    <h2>Ví dụ 6: Revert</h2>
+
+    <div class="grid-container revert">
+        <div>Ô 1</div>
+        <div>Ô 2</div>
+        <div>Ô 3</div>
+        <div>Ô 4</div>
+    </div>
+
+</body>
+</html>
